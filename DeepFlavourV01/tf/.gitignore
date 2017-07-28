@@ -1,0 +1,6 @@
+# This empty directory is needed by tensorflow
+
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
