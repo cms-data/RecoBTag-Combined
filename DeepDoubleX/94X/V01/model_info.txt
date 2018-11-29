@@ -2,7 +2,7 @@ Trained in 2017, Phase-1, 94X configuration
 
 Sample info:
 	QCD:80M
-	Hbb:9M - some missing samples
+	Hbb:9M - (some missing samples in mass-independent models)
 	Hcc:10M
 
 Training info:
@@ -11,7 +11,8 @@ Training info:
 	useweights
 
 Mass independence (applicable to suffix: mass_independent):
-	lambda = 15
+	20 epochs
+	lambda = 2
 	decorrelation using kl_div 
 
 Model export config:
