@@ -1,0 +1,282 @@
+{
+  "flav_names": [
+    "probXbb",
+    "probXcc",
+    "probXqq",
+    "probQCDbb",
+    "probQCDcc",
+    "probQCDb",
+    "probQCDc",
+    "probQCDothers"
+  ],
+  "input_names": [
+    "pf_features",
+    "pf_mask",
+    "pf_points",
+    "sv_features",
+    "sv_mask",
+    "sv_points"
+  ],
+  "pf_features": {
+    "input_shape": [
+      1,
+      20,
+      100
+    ],
+    "var_infos": {
+      "pfcand_VTX_ass": {
+        "median": 7.0,
+        "norm_factor": 1.0
+      },
+      "pfcand_abseta": {
+        "median": 0.5702078342437744,
+        "norm_factor": 1.650397941755878
+      },
+      "pfcand_btagEtaRel": {
+        "median": 1.0216445922851562,
+        "norm_factor": 0.45049464765653174
+      },
+      "pfcand_btagJetDistVal": {
+        "median": -8.01788191893138e-05,
+        "norm_factor": 172.90023485322902
+      },
+      "pfcand_btagPParRatio": {
+        "median": 0.7776329517364502,
+        "norm_factor": 1.285953736614434
+      },
+      "pfcand_btagPtRatio": {
+        "median": 0.00793754169717431,
+        "norm_factor": 4.417789653724297
+      },
+      "pfcand_btagSip3dSig": {
+        "median": 0.0,
+        "norm_factor": 0.8715343291648558
+      },
+      "pfcand_btagSip3dVal": {
+        "median": 0.0,
+        "norm_factor": 252.16555414799987
+      },
+      "pfcand_charge": {
+        "median": 0.0,
+        "norm_factor": 1.0
+      },
+      "pfcand_dxy": {
+        "median": 0.0,
+        "norm_factor": 473.799859237899
+      },
+      "pfcand_dxysig": {
+        "median": 0.0,
+        "norm_factor": 1.6631890202427042
+      },
+      "pfcand_dz": {
+        "median": 0.0,
+        "norm_factor": 297.4582326677144
+      },
+      "pfcand_dzsig": {
+        "median": 0.0,
+        "norm_factor": 1.386900984493749
+      },
+      "pfcand_e_log_nopuppi": {
+        "median": 1.4215530753135681,
+        "norm_factor": 0.5199271364891452
+      },
+      "pfcand_etarel": {
+        "median": -0.0048187340144068,
+        "norm_factor": 4.447982755171238
+      },
+      "pfcand_lostInnerHits": {
+        "median": -1.0,
+        "norm_factor": 1.0
+      },
+      "pfcand_normchi2": {
+        "median": 3.0,
+        "norm_factor": 0.001004016064257028
+      },
+      "pfcand_phirel": {
+        "median": -0.00010839945389307104,
+        "norm_factor": 4.3979230443753865
+      },
+      "pfcand_pt_log_nopuppi": {
+        "median": 1.12241530418396,
+        "norm_factor": 0.5143548435556096
+      },
+      "pfcand_quality": {
+        "median": 5.0,
+        "norm_factor": 0.2
+      }
+    },
+    "var_length": 100,
+    "var_names": [
+      "pfcand_pt_log_nopuppi",
+      "pfcand_e_log_nopuppi",
+      "pfcand_etarel",
+      "pfcand_phirel",
+      "pfcand_abseta",
+      "pfcand_charge",
+      "pfcand_VTX_ass",
+      "pfcand_lostInnerHits",
+      "pfcand_normchi2",
+      "pfcand_quality",
+      "pfcand_dz",
+      "pfcand_dzsig",
+      "pfcand_dxy",
+      "pfcand_dxysig",
+      "pfcand_btagEtaRel",
+      "pfcand_btagPtRatio",
+      "pfcand_btagPParRatio",
+      "pfcand_btagSip3dVal",
+      "pfcand_btagSip3dSig",
+      "pfcand_btagJetDistVal"
+    ]
+  },
+  "pf_mask": {
+    "input_shape": [
+      1,
+      1,
+      100
+    ],
+    "var_infos": {
+      "pfcand_mask": {
+        "median": 0.0,
+        "norm_factor": 1.0
+      }
+    },
+    "var_length": 100,
+    "var_names": [
+      "pfcand_mask"
+    ]
+  },
+  "pf_points": {
+    "input_shape": [
+      1,
+      2,
+      100
+    ],
+    "var_infos": {
+      "pfcand_etarel": {
+        "median": -0.0048187340144068,
+        "norm_factor": 4.447982755171238
+      },
+      "pfcand_phirel": {
+        "median": -0.00010839945389307104,
+        "norm_factor": 4.3979230443753865
+      }
+    },
+    "var_length": 100,
+    "var_names": [
+      "pfcand_etarel",
+      "pfcand_phirel"
+    ]
+  },
+  "sv_features": {
+    "input_shape": [
+      1,
+      12,
+      7
+    ],
+    "var_infos": {
+      "sv_abseta": {
+        "median": 0.5491966009140015,
+        "norm_factor": 1.5939476880115426
+      },
+      "sv_costhetasvpv": {
+        "median": 0.9997627139091492,
+        "norm_factor": 183.23339376597278
+      },
+      "sv_d3d": {
+        "median": 0.5513421297073364,
+        "norm_factor": 0.22312815380609285
+      },
+      "sv_d3dsig": {
+        "median": 8.356559753417969,
+        "norm_factor": 0.02389999546951837
+      },
+      "sv_dxy": {
+        "median": 0.4215024411678314,
+        "norm_factor": 0.31221827708813427
+      },
+      "sv_dxysig": {
+        "median": 8.344268798828125,
+        "norm_factor": 0.02390170557794748
+      },
+      "sv_etarel": {
+        "median": -0.002474044682458043,
+        "norm_factor": 8.444601883624355
+      },
+      "sv_mass": {
+        "median": 1.3346953392028809,
+        "norm_factor": 0.30923084883711116
+      },
+      "sv_normchi2": {
+        "median": 0.8069154620170593,
+        "norm_factor": 0.7244960986579544
+      },
+      "sv_ntracks": {
+        "median": 3.0,
+        "norm_factor": 0.5
+      },
+      "sv_phirel": {
+        "median": 0.000502154347486794,
+        "norm_factor": 8.732433887710727
+      },
+      "sv_pt_log": {
+        "median": 3.7832536697387695,
+        "norm_factor": 0.6925381441482783
+      }
+    },
+    "var_length": 7,
+    "var_names": [
+      "sv_pt_log",
+      "sv_mass",
+      "sv_phirel",
+      "sv_etarel",
+      "sv_abseta",
+      "sv_ntracks",
+      "sv_normchi2",
+      "sv_dxy",
+      "sv_dxysig",
+      "sv_d3d",
+      "sv_d3dsig",
+      "sv_costhetasvpv"
+    ]
+  },
+  "sv_mask": {
+    "input_shape": [
+      1,
+      1,
+      7
+    ],
+    "var_infos": {
+      "sv_mask": {
+        "median": 0.0,
+        "norm_factor": 1.0
+      }
+    },
+    "var_length": 7,
+    "var_names": [
+      "sv_mask"
+    ]
+  },
+  "sv_points": {
+    "input_shape": [
+      1,
+      2,
+      7
+    ],
+    "var_infos": {
+      "sv_etarel": {
+        "median": -0.002474044682458043,
+        "norm_factor": 8.444601883624355
+      },
+      "sv_phirel": {
+        "median": 0.000502154347486794,
+        "norm_factor": 8.732433887710727
+      }
+    },
+    "var_length": 7,
+    "var_names": [
+      "sv_phirel",
+      "sv_etarel"
+    ]
+  }
+}
