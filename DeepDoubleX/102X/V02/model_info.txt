@@ -1,0 +1,30 @@
+Trained in 2017, Phase-1, 102X configuration
+
+Sample info:
+	QCD:120M
+	H multimass: 60M (equal parts Hbb/Hcc)
+
+Training info:
+	100 epochs
+	weighted
+
+Training reqs:
+	Keras               		   2.2.4
+	Keras-Applications                 1.0.6
+	Keras-Preprocessing                1.0.5	
+	protobuf                           3.6.1
+	tensorboard                        1.9.0
+	tensorflow-gpu                     1.9.0
+
+Model convert/export reqs:
+	Keras                2.3.1
+	Keras-Applications   1.0.8
+	Keras-Preprocessing  1.1.0
+	keras2onnx           1.6.5
+	onnx                 1.6.0
+	onnxconverter-common 1.6.5
+	onnxmltools          1.6.0
+	tensorboard          1.14.0
+	tensorflow           1.14.0
+	
+~ 
