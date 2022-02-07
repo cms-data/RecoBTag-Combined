@@ -1,6 +1,6 @@
-# ParticleNetAK8-MD-2prong-V02
+# ParticleNetAK8-MD-2prong-HLT
 
-This folder contains the ONNX models for the ParticleNet tagger designed for mass-independent 2-prong jet tagging (i.e., X->bb, X->cc, X->qq). The mass decorrelation is achieved by using dedicated signal sample with a scalar resonance decaying into two prongs with flat mass distribution. The model is trained on AK8 puppi jets using privately produced `Run3Winter21DRPremixMiniAOD_phase1_2021_realistic` samples in 12_0_X (puppi tune V14). Below the list of samples adopted:
+This folder contains the ONNX models for the ParticleNet tagger designed for mass-independent (mass decorrelated) 2-prong jet tagging (i.e., X->bb, X->cc, X->qq). The mass decorrelation is achieved by using dedicated signal sample with a scalar resonance decaying into two prongs with flat mass distribution. The model is trained on AK8 PF jets reconstructed at HLT using privately produced `Run3Winter21DRPremixMiniAOD_phase1_2021_realistic` modified miniAOD (containing both RECO and HLT collections) samples in 12_0_X. Below the list of samples adopted:
   - `/XtoHH_hadronic_TuneCP5_pythia8_part1_14TeV/rgerosa-Run3Winter21DRPremixMiniAOD_phase1_2021_realistic_AK8_v1-MINIAODSIM-7fc01a58a48afe2b34364c8423c1519b/USER`
   - `/XtoHH_hadronic_TuneCP5_pythia8_part2_14TeV/rgerosa-Run3Winter21DRPremixMiniAOD_phase1_2021_realistic_AK8_v1-MINIAODSIM-7fc01a58a48afe2b34364c8423c1519b/USER`
   - `/XtoHH_hadronic_TuneCP5_pythia8_part3_14TeV/rgerosa-Run3Winter21DRPremixMiniAOD_phase1_2021_realistic_AK8_v1-MINIAODSIM-7fc01a58a48afe2b34364c8423c1519b/USER`
