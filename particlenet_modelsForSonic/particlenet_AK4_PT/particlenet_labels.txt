@@ -1,0 +1,8 @@
+b
+bb
+c
+cc
+uds
+g
+undef
+pu
