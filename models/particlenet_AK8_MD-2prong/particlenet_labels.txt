@@ -1,0 +1,8 @@
+H_bb
+H_cc
+H_qq
+QCD_bb
+QCD_cc
+QCD_b
+QCD_c
+QCD_others
