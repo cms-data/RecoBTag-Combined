@@ -1,0 +1,3 @@
+# ParticleNetAK8-MassRegression-V00
+
+This folder contains the ONNX models for the ParticleNet AK8 jet mass regression algorithm. The model is optimized for 2-prong jet mass prediction using the `BulkGravitonToHHTo4Q_MX-600to1500_MH-50to250_*` sample w/ a flat Higgs mass spectrum from 50 to 250 GeV and equal fractions of H->bb, H->cc and H->qq decays as the signal, and Pythia pt-binned QCD sample as the background. The training target is the generated particle mass for the Higgs jets, and the gen-jet soft drop mass for the QCD jets (the gen-jets are clustered with the neutrinos included). The model is trained on Run 3 scouting AK8PF jets.
