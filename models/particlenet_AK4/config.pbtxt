@@ -44,3 +44,4 @@ output [
     label_filename: "particlenet_labels.txt"
   }
 ]
+optimization {graph : {level : -1}}
