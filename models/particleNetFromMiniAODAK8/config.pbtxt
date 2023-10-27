@@ -1,0 +1,47 @@
+name: "particleNetFromMiniAODAK8"
+platform: "onnxruntime_onnx"
+max_batch_size : 500
+dynamic_batching {
+   preferred_batch_size: [ 200 ]
+}
+input [
+  {
+    name: "pf_points"
+    data_type: TYPE_FP32
+    dims: [ 2, -1 ]
+  },
+  {
+    name: "pf_features"
+    data_type: TYPE_FP32
+    dims: [ 32, -1 ]
+  },
+  {
+    name: "pf_mask"
+    data_type: TYPE_FP32
+    dims: [ 1, -1 ]
+  },
+  {
+    name: "sv_points"
+    data_type: TYPE_FP32
+    dims: [ 2, -1 ]
+  },
+  {
+    name: "sv_features"
+    data_type: TYPE_FP32
+    dims: [ 10, -1 ]
+  },
+  {
+    name: "sv_mask"
+    data_type: TYPE_FP32
+    dims: [ 1, -1 ]
+  }
+]
+output [
+  {
+    name: "output"
+    data_type: TYPE_FP32
+    dims: [ 11 ]
+    label_filename: "particlenet_labels.txt"
+  }
+]
+optimization {graph : {level : -1}}

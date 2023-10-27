@@ -1,0 +1,11 @@
+H_tt
+H_tm
+H_te
+H_bb
+H_cc
+H_qq
+H_gg
+QCD_2hf
+QCD_1hf
+QCD_0hf
+mass

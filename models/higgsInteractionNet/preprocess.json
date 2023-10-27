@@ -1,0 +1,422 @@
+{
+  "output_names": [
+    "QCD",
+    "Hbb"
+  ],
+  "input_names": [
+    "input_cpf",
+    "input_sv"
+  ],
+  "input_cpf": {
+    "var_names": [
+	"pfcand_ptrel",
+        "pfcand_erel",
+        "pfcand_phirel",
+        "pfcand_etarel",
+        "pfcand_deltaR",
+        "pfcand_drminsv",
+        "pfcand_drsubjet1",
+        "pfcand_drsubjet2",
+        "pfcand_dz",
+        "pfcand_dzsig",
+        "pfcand_dxy",
+        "pfcand_dxysig",
+        "pfcand_normchi2",
+        "pfcand_quality",
+        "pfcand_dptdpt",
+        "pfcand_detadeta",
+        "pfcand_dphidphi",
+        "pfcand_dxydxy",
+        "pfcand_dzdz",
+        "pfcand_dxydz",
+        "pfcand_dphidxy",
+        "pfcand_dlambdadz",
+        "pfcand_btagEtaRel",
+        "pfcand_btagPtRatio",
+        "pfcand_btagPParRatio",
+        "pfcand_btagSip2dVal",
+        "pfcand_btagSip2dSig",
+        "pfcand_btagSip3dVal",
+        "pfcand_btagSip3dSig",
+        "pfcand_btagJetDistVal"
+    ],
+    "var_infos": {
+      "pfcand_ptrel": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_erel": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_phirel": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_etarel": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_deltaR": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_drminsv": {
+        "median": 0.8,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0.8,
+        "lower_bound": -0.8,
+        "upper_bound": 0.0,
+        "pad": 0
+      },
+      "pfcand_drsubjet1": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_drsubjet2": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_dz": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_dzsig": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -2000,
+        "upper_bound": 2000,
+        "pad": 0
+      },
+      "pfcand_dxy": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_dxysig": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -2000,
+        "upper_bound": 2000,
+        "pad": 0
+      },
+      "pfcand_normchi2": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 300.0,
+        "lower_bound": -1.0,
+        "upper_bound": 300,
+        "pad": 0
+      },
+      "pfcand_quality": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_dptdpt": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_detadeta": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_dphidphi": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_dxydxy": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_dzdz": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_dxydz": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_dphidxy": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_dlambdadz": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "pfcand_btagEtaRel": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 15,
+        "pad": 0
+      },
+      "pfcand_btagPtRatio": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1,
+        "upper_bound": 10,
+        "pad": 0
+      },
+      "pfcand_btagPParRatio": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -10,
+        "upper_bound": 10,
+        "pad": 0
+      },
+      "pfcand_btagSip2dVal": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1,
+        "upper_bound": 70,
+        "pad": 0
+      },
+      "pfcand_btagSip2dSig": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1,
+        "upper_bound": 4e4,
+        "pad": 0
+      },
+      "pfcand_btagSip3dVal": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1,
+        "upper_bound": 1e5,
+        "pad": 0
+      },
+      "pfcand_btagSip3dSig": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -1,
+        "upper_bound": 4e4,
+        "pad": 0
+      },
+      "pfcand_btagJetDistVal": {
+        "median": 0.0,
+        "norm_factor": 1.0,
+        "replace_inf_value": 0,
+        "lower_bound": -20,
+        "upper_bound": 1,
+        "pad": 0
+      }
+    },
+    "min_length": 60,
+    "max_length": 60
+  },
+  "input_sv": {
+    "var_names": [
+	"sv_ptrel",
+        "sv_erel",
+        "sv_phirel",
+        "sv_etarel",
+        "sv_deltaR",
+        "sv_pt",
+        "sv_mass",
+        "sv_ntracks",
+        "sv_normchi2",
+        "sv_dxy",
+        "sv_dxysig",
+        "sv_d3d",
+        "sv_d3dsig",
+        "sv_costhetasvpv"
+    ],
+    "var_infos": {
+      "sv_ptrel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "sv_erel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "sv_phirel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "sv_etarel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "sv_deltaR": {
+        "median": 0.5,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -2.0,
+        "upper_bound": 0.0,
+        "pad": 0
+      },
+      "sv_pt": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "sv_mass": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "sv_ntracks": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "sv_normchi2": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 1000,
+        "lower_bound": -1000,
+        "upper_bound": 1000,
+        "pad": 0
+      },
+      "sv_dxy": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "sv_dxysig": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1.0,
+        "upper_bound": 800.0,
+        "pad": 0
+      },
+      "sv_d3d": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "sv_d3dsig": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1.0,
+        "upper_bound": 800.0,
+        "pad": 0
+      },
+      "sv_costhetasvpv": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      }
+    },
+    "min_length": 5,
+    "max_length": 5
+  }
+}
