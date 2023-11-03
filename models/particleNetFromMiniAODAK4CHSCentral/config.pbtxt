@@ -1,6 +1,6 @@
-name: "particlenet_AK8_MassRegression"
+name: "particleNetFromMiniAODAK4CHSCentral"
 platform: "onnxruntime_onnx"
-max_batch_size : 200
+max_batch_size : 500
 dynamic_batching {
    preferred_batch_size: [ 200 ]
 }
@@ -13,7 +13,7 @@ input [
   {
     name: "pf_features"
     data_type: TYPE_FP32
-    dims: [ 25, -1 ]
+    dims: [ 41, -1 ]
   },
   {
     name: "pf_mask"
@@ -28,10 +28,25 @@ input [
   {
     name: "sv_features"
     data_type: TYPE_FP32
-    dims: [ 11, -1 ]
+    dims: [ 10, -1 ]
   },
   {
     name: "sv_mask"
+    data_type: TYPE_FP32
+    dims: [ 1, -1 ]
+  },
+  {
+    name: "lt_points"
+    data_type: TYPE_FP32
+    dims: [ 2, -1 ]
+  },
+  {
+    name: "lt_features"
+    data_type: TYPE_FP32
+    dims: [ 19, -1 ]
+  },
+  {
+    name: "lt_mask"
     data_type: TYPE_FP32
     dims: [ 1, -1 ]
   }
@@ -40,7 +55,7 @@ output [
   {
     name: "output"
     data_type: TYPE_FP32
-    dims: [ 1 ]
+    dims: [ 20 ]
     label_filename: "particlenet_labels.txt"
   }
 ]
