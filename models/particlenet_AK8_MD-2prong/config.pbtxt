@@ -1,47 +1,51 @@
 name: "particlenet_AK8_MD-2prong"
 platform: "onnxruntime_onnx"
-max_batch_size : 160
+max_batch_size: 160
+input [{
+  name: "pf_points"
+  data_type: TYPE_FP32
+  dims: [2, -1]
+}, {
+  name: "pf_features"
+  data_type: TYPE_FP32
+  dims: [20, -1]
+}, {
+  name: "pf_mask"
+  data_type: TYPE_FP32
+  dims: [1, -1]
+}, {
+  name: "sv_points"
+  data_type: TYPE_FP32
+  dims: [2, -1]
+}, {
+  name: "sv_features"
+  data_type: TYPE_FP32
+  dims: [11, -1]
+}, {
+  name: "sv_mask"
+  data_type: TYPE_FP32
+  dims: [1, -1]
+}]
+output [{
+  name: "softmax"
+  data_type: TYPE_FP32
+  dims: [8]
+  label_filename: "particlenet_labels.txt"
+}]
 dynamic_batching {
-   preferred_batch_size: [ 128 ]
+  preferred_batch_size: [128]
 }
-input [
-  {
-    name: "pf_points"
-    data_type: TYPE_FP32
-    dims: [ 2, -1 ]
-  },
-  {
-    name: "pf_features"
-    data_type: TYPE_FP32
-    dims: [ 20, -1 ]
-  },
-  {
-    name: "pf_mask"
-    data_type: TYPE_FP32
-    dims: [ 1, -1 ]
-  },
-  {
-    name: "sv_points"
-    data_type: TYPE_FP32
-    dims: [ 2, -1 ]
-  },
-  {
-    name: "sv_features"
-    data_type: TYPE_FP32
-    dims: [ 11, -1 ]
-  },
-  {
-    name: "sv_mask"
-    data_type: TYPE_FP32
-    dims: [ 1, -1 ]
+optimization {
+  graph {
+    level: -1
   }
-]
-output [
-  {
-    name: "softmax"
-    data_type: TYPE_FP32
-    dims: [ 8 ]
-    label_filename: "particlenet_labels.txt"
-  }
-]
-optimization {graph : {level : -1}}
+}
+model_repository_agents {
+  agents [{
+    name: "checksum"
+    parameters {
+      key: "MD5:1/model.onnx"
+      value: "a8647c821962d5b687dfbdbdca60525e"
+    }
+  }]
+}

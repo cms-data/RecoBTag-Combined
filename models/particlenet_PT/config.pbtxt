@@ -1,47 +1,51 @@
 name: "particlenet_PT"
 platform: "pytorch_libtorch"
-max_batch_size : 160
+max_batch_size: 160
+input [{
+  name: "pf_points__0"
+  data_type: TYPE_FP32
+  dims: [2, -1]
+}, {
+  name: "pf_features__1"
+  data_type: TYPE_FP32
+  dims: [25, -1]
+}, {
+  name: "pf_mask__2"
+  data_type: TYPE_FP32
+  dims: [1, -1]
+}, {
+  name: "sv_points__3"
+  data_type: TYPE_FP32
+  dims: [2, -1]
+}, {
+  name: "sv_features__4"
+  data_type: TYPE_FP32
+  dims: [11, -1]
+}, {
+  name: "sv_mask__5"
+  data_type: TYPE_FP32
+  dims: [1, -1]
+}]
+output [{
+  name: "softmax__0"
+  data_type: TYPE_FP32
+  dims: [20]
+  label_filename: "particlenet_labels.txt"
+}]
 dynamic_batching {
-   preferred_batch_size: [ 80 ]
+  preferred_batch_size: [80]
 }
-input [
-  {
-    name: "pf_points__0"
-    data_type: TYPE_FP32
-    dims: [ 2, -1 ]
-  },
-  {
-    name: "pf_features__1"
-    data_type: TYPE_FP32
-    dims: [ 25, -1 ]
-  },
-  {
-    name: "pf_mask__2"
-    data_type: TYPE_FP32
-    dims: [ 1, -1 ]
-  },
-  {
-    name: "sv_points__3"
-    data_type: TYPE_FP32
-    dims: [ 2, -1 ]
-  },
-  {
-    name: "sv_features__4"
-    data_type: TYPE_FP32
-    dims: [ 11, -1 ]
-  },
-  {
-    name: "sv_mask__5"
-    data_type: TYPE_FP32
-    dims: [ 1, -1 ]
+optimization {
+  graph {
+    level: -1
   }
-]
-output [
-  {
-    name: "softmax__0"
-    data_type: TYPE_FP32
-    dims: [ 20 ]
-    label_filename: "particlenet_labels.txt"
-  }
-]
-optimization {graph : {level : -1}}
+}
+model_repository_agents {
+  agents [{
+    name: "checksum"
+    parameters {
+      key: "MD5:1/model.pt"
+      value: "a5b29f593329a6ecc67991b711ad7d07"
+    }
+  }]
+}

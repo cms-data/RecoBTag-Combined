@@ -1,62 +1,63 @@
 name: "particleNetFromMiniAODAK4PuppiForward"
 platform: "onnxruntime_onnx"
-max_batch_size : 500
+max_batch_size: 500
+input [{
+  name: "pf_points"
+  data_type: TYPE_FP32
+  dims: [2, -1]
+}, {
+  name: "pf_features"
+  data_type: TYPE_FP32
+  dims: [40, -1]
+}, {
+  name: "pf_mask"
+  data_type: TYPE_FP32
+  dims: [1, -1]
+}, {
+  name: "sv_points"
+  data_type: TYPE_FP32
+  dims: [2, -1]
+}, {
+  name: "sv_features"
+  data_type: TYPE_FP32
+  dims: [10, -1]
+}, {
+  name: "sv_mask"
+  data_type: TYPE_FP32
+  dims: [1, -1]
+}, {
+  name: "lt_points"
+  data_type: TYPE_FP32
+  dims: [2, -1]
+}, {
+  name: "lt_features"
+  data_type: TYPE_FP32
+  dims: [19, -1]
+}, {
+  name: "lt_mask"
+  data_type: TYPE_FP32
+  dims: [1, -1]
+}]
+output [{
+  name: "output"
+  data_type: TYPE_FP32
+  dims: [6]
+  label_filename: "particlenet_labels.txt"
+}]
 dynamic_batching {
-   preferred_batch_size: [ 200 ]
+  preferred_batch_size: [200]
 }
-input [
-  {
-    name: "pf_points"
-    data_type: TYPE_FP32
-    dims: [ 2, -1 ]
-  },
-  {
-    name: "pf_features"
-    data_type: TYPE_FP32
-    dims: [ 40, -1 ]
-  },
-  {
-    name: "pf_mask"
-    data_type: TYPE_FP32
-    dims: [ 1, -1 ]
-  },
-  {
-    name: "sv_points"
-    data_type: TYPE_FP32
-    dims: [ 2, -1 ]
-  },
-  {
-    name: "sv_features"
-    data_type: TYPE_FP32
-    dims: [ 10, -1 ]
-  },
-  {
-    name: "sv_mask"
-    data_type: TYPE_FP32
-    dims: [ 1, -1 ]
-  },
-  {
-    name: "lt_points"
-    data_type: TYPE_FP32
-    dims: [ 2, -1 ]
-  },
-  {
-    name: "lt_features"
-    data_type: TYPE_FP32
-    dims: [ 19, -1 ]
-  },
-  {
-    name: "lt_mask"
-    data_type: TYPE_FP32
-    dims: [ 1, -1 ]
+optimization {
+  graph {
+    level: -1
   }
-]
-output [
-  {
-    name: "output"
-    data_type: TYPE_FP32
-    dims: [ 6 ]
-    label_filename: "particlenet_labels.txt"
-  }
-]
-optimization {graph : {level : -1}}
+}
+model_repository_agents {
+  agents [{
+    name: "checksum"
+    parameters {
+      key: "MD5:1/model.onnx"
+      value: "3aaf54a48234ceed80c0c711c0bd3142"
+    }
+  }]
+}
