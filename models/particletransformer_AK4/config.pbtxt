@@ -1,0 +1,47 @@
+name: "particletransformer_AK4"
+platform: "onnxruntime_onnx"
+max_batch_size : 500
+dynamic_batching {
+   preferred_batch_size: [ 200 ]
+}
+input [
+  {
+    name: "input_1"
+    data_type: TYPE_FP32
+    dims: [ -1, 16 ]
+  },
+  {
+    name: "input_2"
+    data_type: TYPE_FP32
+    dims: [ -1, 8 ]
+  },
+  {
+    name: "input_3"
+    data_type: TYPE_FP32
+    dims: [ -1, 14 ]
+  },
+  {
+    name: "input_4"
+    data_type: TYPE_FP32
+    dims: [ -1, 4 ]
+  },
+  {
+    name: "input_5"
+    data_type: TYPE_FP32
+    dims: [ -1, 4 ]
+  },
+  {
+    name: "input_6"
+    data_type: TYPE_FP32
+    dims: [ -1, 4 ]
+  }
+]
+output [
+  {
+    name: "softmax"
+    data_type: TYPE_FP32
+    dims: [ 6 ]
+    label_filename: "particletransformer_labels.txt"
+  }
+]
+optimization {graph : {level : -1}}
